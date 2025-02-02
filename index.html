@@ -17,7 +17,6 @@
     <script src="https://kit.fontawesome.com/cebd269f74.js" crossorigin="anonymous"></script>
     <!-- Tailwind Script CDN -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-
     <style>
         .sora-normal {
             font-family: "Sora", serif;
@@ -30,7 +29,7 @@
     </style>
 </head>
 
-<body class="sora-normal">
+<body class="sora-normal text-black mx-0 my-0 px-0 py-0">
     <header>
         <nav class="bg-[#FFF9F4] px-36 py-9">
             <div class="flex justify-between items-center">
@@ -53,8 +52,8 @@
                         <button><i class="fa-solid fa-magnifying-glass fa-2xl"></i></button>
                     </div>
                     <div class="flex justify-between gap-3 text-xl">
-                        <button class="px-7 py-3 border-box border-1 rounded-lg border-[#FFDC26] hover:bg-[#FFDC26]">Login</button>
-                        <button class="px-7 py-3 border-box rounded-lg bg-[#FFDC26] border-white hover:bg-[#ffffff] hover:border-[#FFDC26] hover:border-x hover:border-y">Register</button>
+                        <button class="px-7 py-3 border-box border-1 rounded-lg border-[#FFDC26] hover:bg-[#FFDC26] ">Login</button>
+                        <button class="px-7 py-3 border-box rounded-lg bg-[#FFDC26] hover:bg-[#ffffff] hover:outline-1 hover:outline-[#FFDC26] ">Register</button>
                     </div>
                 </div>
             </div>
@@ -62,10 +61,16 @@
         </nav>
     </header>
 
-    <main>
-        This is main body
+    <main class="px-36 pt-24">
+        <section class="Hero flex justify-between ">
+            <div class="self-start">
+                <h1 class="adlam-display text-6xl">Pamper Your Pet,<br> Because They Deserve<br>the Bes</h1><br>
+                <p class="text-xl">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p><br>
+                <button class="box-border text-xl px-8 py-3 bg-[#FFDC26] rounded-lg hover:bg-[#ffffff] hover:outline-1 hover:outline-[#FFDC26]">Find a pet</button>
+            </div>
+            <img class="self-end" src="c1-assets/cat-big.png" alt="cat-big" >
+        </section>
     </main>
-
     <footer>
         This is footer
     </footer>
