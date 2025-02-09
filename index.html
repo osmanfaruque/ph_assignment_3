@@ -52,8 +52,10 @@
                         <button><i class="fa-solid fa-magnifying-glass fa-2xl"></i></button>
                     </div>
                     <div class="flex justify-between gap-3 text-xl">
-                        <button class="px-7 py-3 border-box border-1 rounded-lg border-[#FFDC26] hover:bg-[#FFDC26] ">Login</button>
-                        <button class="px-7 py-3 border-box rounded-lg bg-[#FFDC26] hover:bg-[#ffffff] hover:outline-1 hover:outline-[#FFDC26] ">Register</button>
+                        <button
+                            class="px-7 py-3 border-box border-1 rounded-lg border-[#FFDC26] hover:bg-[#FFDC26] ">Login</button>
+                        <button
+                            class="px-7 py-3 border-box rounded-lg bg-[#FFDC26] hover:bg-[#ffffff] hover:outline-1 hover:outline-[#FFDC26] ">Register</button>
                     </div>
                 </div>
             </div>
@@ -62,13 +64,20 @@
     </header>
 
     <main class="px-36 pt-24">
-        <section class="Hero flex justify-between ">
-            <div class="self-start">
-                <h1 class="adlam-display text-6xl">Pamper Your Pet,<br> Because They Deserve<br>the Bes</h1><br>
-                <p class="text-xl">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p><br>
-                <button class="box-border text-xl px-8 py-3 bg-[#FFDC26] rounded-lg hover:bg-[#ffffff] hover:outline-1 hover:outline-[#FFDC26]">Find a pet</button>
+        <section class="Hero relative">
+            <!-- Hidden image to get intrinsic dimensions -->
+            <img src="c1-assets/cat-big.png" class="invisible w-full" aria-hidden="true" alt="Sizing helper">
+
+            <!-- Content container -->
+            <div class="absolute inset-0 flex-col justify-between bg-contain bg-no-repeat" style="background-image: url('c1-assets/cat-big.png');">
+                    <h1 class="adlam-display text-6xl">Pamper Your Pet,<br> Because They Deserve<br>the Best</h1>
+                    <p class="text-xl mt-4">Discover a world of treats, toys, and essentials handpicked for your furry
+                        friends. Shop now and make tails wag with joy!</p>
+                    <button
+                        class="mt-6 text-xl px-8 py-3 bg-[#FFDC26] rounded-lg hover:bg-white hover:outline hover:outline-[#FFDC26]">
+                        Find a pet
+                    </button>
             </div>
-            <img class="self-end" src="c1-assets/cat-big.png" alt="cat-big" >
         </section>
     </main>
     <footer>
